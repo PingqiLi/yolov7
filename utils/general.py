@@ -36,7 +36,7 @@ def set_logging(rank=-1):
         level=logging.INFO if rank in [-1, 0] else logging.WARN)
 
 
-def init_seeds(seed=0):
+def init_seeds(seed=2):
     # Initialize random number generator (RNG) seeds
     random.seed(seed)
     np.random.seed(seed)
